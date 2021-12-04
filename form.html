@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <title>Quizlet</title>
+</head>
+<body>
+    <div id="container-form">
+        <div id="header">
+            <a href="index.html"><h1 class="title">Quizlet</h1></a>
+            <a href="form.html"><p class="add-btn">+</p></a>
+        </div>
+        <div id="form">
+            <select name="existing-question" id="exisiting-question">
+                <option value="nil" id="nil-selected" selected>New Question</option>
+            </select>
+            <label for="description" id="form-label-description">Description: </label>
+            <input type="text" name="description" id="form-description">
+            <label for="options" id="form-label-options">Options: </label>
+            <textarea name="options" id="form-options" cols="20" rows="5"></textarea>
+            <label for="answer" id="form-label-answer">Answer: </label>
+            <input type="text" name="answer" id="form-answer">
+            <button id="form-submit">Update/Create</button>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
